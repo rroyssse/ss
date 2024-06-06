@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог спортивного спорядження</title>
+    <link rel="stylesheet" href="css/switch.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/element.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="headwrapper">
+        <div class="sitename">
+          <b>Спортивне спорядження</b>
+        </div>
+        <div class="searchzonewrapper">
+          <div>
+            <input
+              type="search"
+              id="csearch"
+              class="searchfield"
+              placeholder="Шукати..."
+            />
+          </div>
+          <div><button class="blue-button" id="searchbtn">Шукати</button></div>
+          <div><button class="red-button" id="cancelbtn">Закрити</button></div>
+        </div>
+      </div>
+
+      <div class="workspace">
+        <div class="managezone">
+          <div>
+            <h4>Керування</h4>
+          </div>
+          <div class="ta-center">
+            <span class="blue-button" onclick="modifyModalToCreate()"
+              >Додати новий</span
+            >
+          </div>
+          <br />
+          <div>
+            <div class="switchwrapper">
+              <div>Сортувати за ціною</div>
+              <div>
+                <label class="switch">
+                  <input type="checkbox" id="sortcheckbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Середня ціна:</h4>
+          </div>
+          <div class="ta-center">
+            <button class="blue-button" id="countbtn">Розрахувати</button>
+          </div>
+          <div class="ta-center">
+            <p id="countresult"></p>
+          </div>
+          <div class="ta-center">
+            <button class="blue-button" id="preparebn" onclick="prepare()">
+              Завантажити
+            </button>
+          </div>
+        </div>
+
+        <div class="displayzone"></div>
+      </div>
+    </div>
+
+    <script src="scr/base.js"></script>
+    <script src="scr/modal.js"></script>
+    <script src="scr/prepare.js"></script>
+
+    <script src="scr/index.js"></script>
+    <script src="scr/element.js"></script>
+    <script src="scr/sort_searh.js"></script>
+  </body>
+</html>
